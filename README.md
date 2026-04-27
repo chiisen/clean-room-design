@@ -4,7 +4,7 @@
 
 ## 目的
 
-本專案建立 Clean Room Design 的完整流程文檔與 AI Agent 協作指南，用於：
+本專案建立 Clean Room Design 的完整流程文件與 AI Agent 協作指南，用於：
 
 - 學習 Clean Room Design 概念
 - 理解 AI Agent 的 Session 隔離策略
@@ -16,7 +16,9 @@
 /raw/                           ← 技術文件輸入區
 ├── bubble-sort-spec.md         ← Level 1 演示：泡沫排序規格
 ├── clean-room-concepts.md      ← 概念深入：法律背景、適用場景、風險
-└── session-isolation-strategy.md ← AI Agent Session 隔離策略
+├── session-isolation-strategy.md ← AI Agent Session 隔離策略
+├── spec-writing-method.md      ← 規格編寫詳細方法
+└── test-validation-strategy.md ← 測試驗證策略
 
 /docs/examples/                 ← 演示範例
 └── clean-room-demo.md          ← 泡沫排序完整演示
@@ -34,7 +36,7 @@
 
 ### AI Agent Session 分工
 
-| Session | 角色 | 可看原代碼 |
+| Session | 角色 | 可看原程式碼 |
 |---------|------|-----------|
 | Session A | 規格編寫者 | ✅ |
 | Session B | 移植開發者 | ❌ |
@@ -44,9 +46,11 @@
 
 ### 學習流程
 
-1.閱讀 [`/docs/examples/clean-room-demo.md`](docs/examples/clean-room-demo.md) - 了解基本概念
+1. 閱讀 [`/docs/examples/clean-room-demo.md`](docs/examples/clean-room-demo.md) - 了解基本概念
 2. 閱讀 [`/raw/clean-room-concepts.md`](raw/clean-room-concepts.md) - 深入理解適用場景
 3. 閱讀 [`/raw/session-isolation-strategy.md`](raw/session-isolation-strategy.md) - AI Agent 協作方式
+4. 閱讀 [`/raw/spec-writing-method.md`](raw/spec-writing-method.md) -規格編寫詳細方法
+5.閱讀 [`/raw/test-validation-strategy.md`](raw/test-validation-strategy.md) -測試驗證策略
 
 ### 實際專案流程
 
@@ -62,6 +66,7 @@
 - MemPalace 記錄策略（Wing 架構、記錄流程）
 - Graphify 知識图谱（目錄結構、使用流程）
 - Clean Room Session 隔離（角色分工、記錄規則）
+- 繁體中文規範（所有輸出必須使用繁體中文）
 
 ---
 
