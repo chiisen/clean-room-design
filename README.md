@@ -51,6 +51,7 @@
 3. 閱讀 [`/raw/session-isolation-strategy.md`](raw/session-isolation-strategy.md) - AI Agent 協作方式
 4. 閱讀 [`/raw/spec-writing-method.md`](raw/spec-writing-method.md) -規格編寫詳細方法
 5.閱讀 [`/raw/test-validation-strategy.md`](raw/test-validation-strategy.md) -測試驗證策略
+6.閱讀 [`/demo/README.md`](demo/README.md) - Level 2 完整 Session 隔離演示
 
 ### 實際專案流程
 
