@@ -42,27 +42,27 @@ wing: wing_clean_room_design
 
 會話開始時呼叫 `mempalace_mempalace_kg_query(entity="clean-room-design")` 查詢既有記錄。
 
-## 🔒 Clean Room Design Session 隔离
+## 🔒 Clean Room Design Session 隔離
 
 ### 角色分工
 
-| Session | 角色 | 可看原代码 | 输入 | 输出 |
+| Session | 角色 | 可看原程式碼 | 輸入 | 輸出 |
 |---------|------|-----------|------|------|
-| **Session A** | 规格编写者 | ✅ | 原代码仓库 | `/raw/specs/*.md` |
-| **Session B** | 移植开发者 | ❌ | `/raw/specs/*.md` | 新语言实现 |
-| **Session C** | 测试验证者 | ❌ | 测试用例 | 验证报告 |
+| **Session A** | 規格編寫者 | ✅ | 原程式碼倉庫 | `/raw/specs/*.md` |
+| **Session B** | 移植開發者 | ❌ | `/raw/specs/*.md` | 新語言實現 |
+| **Session C** | 測試驗證者 | ❌ | 測試用例 | 驗證報告 |
 
-### 记录规则
+### 記錄規則
 
-| 阶段 | 可记录 | 不可记录 |
+| 階段 | 可記錄 | 不可記錄 |
 |------|--------|----------|
-| **规格阶段** | 功能描述、输入/输出格式、边界条件 | 具体代码片段、变量命名、算法结构 |
-| **实现阶段** | 实现决策、新代码结构 | 对原代码的对比分析 |
-| **验证阶段** | 测试结果、行为差异 | 代码结构差异分析 |
+| **規格階段** | 功能描述、輸入/輸出格式、邊界條件 | 具體程式碼片段、變數命名、算法結構 |
+| **實現階段** | 實現決策、新程式碼結構 | 對原程式碼的對比分析 |
+| **驗證階段** | 測試結果、行為差異 | 程式碼結構差異分析 |
 
-### MemPalace 污染检查
+### MemPalace 汙染檢查
 
-Session A 结束前，审查 MemPalace 记录，使用 `mempalace_kg_invalidate` 清除代码细节记录。
+Session A 結束前，審查 MemPalace 記錄，使用 `mempalace_kg_invalidate` 清除程式碼細節記錄。
 
 ## 🔮 Graphify 知識图谱
 
